@@ -85,7 +85,7 @@ def additor(notation, a, b):
         numb2 = b % (10**(i+1)) // (10**i)
         while(a >= 10**j or r != 0):
             numb1 = a % (10**(j+1)) // (10**j)
-            sumN1N2_R = summator(notation, numb1*numb2, r)
+            sumN1N2_R = numb1*numb2 + r
             s = sumN1N2_R % notation
             r = sumN1N2_R // notation
             sum += s * 10**j
